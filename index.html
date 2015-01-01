@@ -49,36 +49,63 @@
 </head>
 
 <body>
-	
-<div class="intro"><p><h2 class="lead">Keep track of the night out</h2></p></div>
-<p><h4 class="lead">We give an estimate on the likelyhood of having a hangover based on your consumption.</h4><p>
-<p><h7 class="lead">Tomorrow, you rate how accurate the predictions was and we adjsut our model to your real life data.<h7><p>
-	<div class="container-fluid">
-		<div class="row">
-	  		<div class="col-xs-6">
-								<!-- Standard button -->
-				<button type="button" class="btn btn-default" id="drinks"> + 1 drink</button>
-			</div>
 
-				<div class="col-xs-6" id="drinksUsed">0 drinks</div>
-			</div>
-			<br>
+<div class="bg-primary"<p><h2 class="lead">Keep track of the night out</h2></p></div>
+<p><h4 class="lead">We give an estimate on the likelihood of having a hangover based on your consumption.</h4><p>
+<p><h7 class="lead">Tomorrow, you rate how accurate the predictions was and we adjust our model to your real life data.<h7><p>
+	<div class="container-fluid">
+		
+<!-- Buttons for increasing and decreasing drink intake-->
 		<div class="row">
-	  		<div class="col-xs-6">
-								<!-- Standard button -->
-				<button type="button" class="btn btn-default" id="waters"> + 1 water</button>
+<!-- Button to increase drinks-->
+	  		<div class="col-xs-4">
+				<button type="button" class="btn btn-success" id="drinks"> + 1 drink</button>
 			</div>
-				<div class="col-xs-6" id="watersUsed">You haven't add any water tonight, drink up</div>
-				</div>
-				<br>
-		  	<div class="row">
-	  		<div class="col-xs-6">
-								<!-- Standard button -->
-				<button type="button" class="btn btn-default" id="cigs"> + 1 cig</button>
-				</div>
-				<div class="col-xs-6" id="cigsUsed">0 cigs</div>
+<!-- Visual display of total drinks so far-->
+				<div class="col-xs-4" id="drinksUsed">0 drinks</div>
+<!-- Button to decrease drinks-->
+			<div class="col-xs-4">
+				<button type="button" class="btn btn-danger" id="lessdrinks"> - 1 drink</button>
 			</div>
-			<br>
+		</div><br>
+<!-- Buttons for increasing and decreasing water intake-->	
+		<div class="row">
+<!-- Button for increasing water intake-->
+	  		<div class="col-xs-4">							
+				<button type="button" class="btn btn-success" id="waters"> + 1 water</button>
+			</div>
+<!-- Visual display of total waters so far-->
+				<div class="col-xs-4" id="watersUsed">0 waters</div>
+<!-- Button for decreasing water intake-->
+			<div class="col-xs-4">
+				<button type="button" class="btn btn-danger" id="lesswaters"> - 1 water</button>
+			</div>
+		</div><br>
+<!-- Buttons for increasing and decreasing cig intake-->	
+		 <div class="row">
+<!-- Button for increasing cig intake-->
+	  		<div class="col-xs-4">
+				<button type="button" class="btn btn-success" id="cigs"> + 1 cig</button>
+			</div>
+				<div class="col-xs-4" id="cigsUsed">0 cigs</div>
+			<div class="col-xs-4">
+<!-- Button for decreasing cig intake -->
+					<button type="button" class="btn btn-danger" id="lesscigs"> - 1 cig</button>
+			</div>
+		</div><br>
+		<div>Predicted hangover level
+			<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%">
+    <span class="sr-only">35% Complete (success)</span>
+  </div>
+  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+    <span class="sr-only">20% Complete (warning)</span>
+  </div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%">
+    <span class="sr-only">10% Complete (danger)</span>
+  </div>
+  </div>
+</div>
 	  	</div>
 <p>The more you use the app the better our predictions will be and the more informed you will be</p>
 <p><h9>Enjoy Responisbly!</h9></p>

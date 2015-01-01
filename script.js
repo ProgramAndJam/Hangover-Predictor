@@ -17,5 +17,21 @@ $(document).ready(function(){
 		numWaters = numWaters+1
 		$('#watersUsed').html( numWaters + " water(s)")
 	});
+
+// for the fat fingers
+	$('#lesscigs').click(function(){
+		numCigs = numCigs-1
+		$('#cigsUsed').html( numCigs + " cig(s)")
+	});
+
+	$('#lessdrinks').click(function(){
+		numDrinks = numDrinks-1
+		$('#drinksUsed').html( numDrinks + " drink(s)")
+	});
+
+	$('#lesswaters').click(function(){
+		numWaters = numWaters-1
+		$('#watersUsed').html( numWaters + " water(s)")
+	});
 	
 });
