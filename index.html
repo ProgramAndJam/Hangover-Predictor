@@ -19,7 +19,36 @@
   ga('create', 'UA-57918267-1', 'auto');
   ga('send', 'pageview');
 
+//GA for all the event handling for increasing and decreasing drinks, waters, cigs. 
+//GA for tracking INCREASE in cig count
+$('#cigs').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'increase cig', 1);
+});
+//GA for tracking DECREASE in cig count
+$('#lesscigs').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'decrease cig', 1);
+});
+//GA for tracking INCREASE in drink count
+$('#drinks').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'increase drink', 1);
+});
+//GA for tracking DECREASE in drink count
+$('#lessdrinks').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'decrease drink', 1);
+});
+//GA for tracking INCREASE in water count
+$('#waters').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'increase water', 1);
+});
+//GA for tracking DECREASE in water count
+$('#lesswaters').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'decrease water', 1);
+});
+
+
+
 </script>
+<!-- End Google Analytics -->
 
 <!-- jQuery  -->
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
@@ -87,6 +116,7 @@
 	  		<div class="col-xs-4">
 				<button type="button" class="btn btn-success" id="cigs"> + 1 cig</button>
 			</div>
+<!-- Visual display of total cig so far-->
 				<div class="col-xs-4" id="cigsUsed">0 cigs</div>
 			<div class="col-xs-4">
 <!-- Button for decreasing cig intake -->
