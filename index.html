@@ -18,35 +18,7 @@
 
   ga('create', 'UA-57918267-1', 'auto');
   ga('send', 'pageview');
-
-//GA for all the event handling for increasing and decreasing drinks, waters, cigs. 
-//GA for tracking INCREASE in cig count
-$('#cigs').on('click', function() {
-  ga('send', 'event', 'button', 'click', 'increase cig', 1);
-});
-//GA for tracking DECREASE in cig count
-$('#lesscigs').on('click', function() {
-  ga('send', 'event', 'button', 'click', 'decrease cig', 1);
-});
-//GA for tracking INCREASE in drink count
-$('#drinks').on('click', function() {
-  ga('send', 'event', 'button', 'click', 'increase drink', 1);
-});
-//GA for tracking DECREASE in drink count
-$('#lessdrinks').on('click', function() {
-  ga('send', 'event', 'button', 'click', 'decrease drink', 1);
-});
-//GA for tracking INCREASE in water count
-$('#waters').on('click', function() {
-  ga('send', 'event', 'button', 'click', 'increase water', 1);
-});
-//GA for tracking DECREASE in water count
-$('#lesswaters').on('click', function() {
-  ga('send', 'event', 'button', 'click', 'decrease water', 1);
-});
-
-
-
+  
 </script>
 <!-- End Google Analytics -->
 
@@ -139,4 +111,31 @@ $('#lesswaters').on('click', function() {
 	  	</div>
 <p>The more you use the app the better our predictions will be and the more informed you will be</p>
 <p><h9>Enjoy Responisbly!</h9></p>
+<script>
+	//GA for all the event handling for increasing and decreasing drinks, waters, cigs. 
+//GA for tracking INCREASE in cig count
+$('#cigs').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'increase cig', 1);
+});
+//GA for tracking DECREASE in cig count
+$('#lesscigs').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'decrease cig', 1);
+});
+//GA for tracking INCREASE in drink count
+$('#drinks').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'increase drink', 1);
+});
+//GA for tracking DECREASE in drink count
+$('#lessdrinks').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'decrease drink', 1);
+});
+//GA for tracking INCREASE in water count
+$('#waters').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'increase water', 1);
+});
+//GA for tracking DECREASE in water count
+$('#lesswaters').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'decrease water', 1);
+});
+</script>
 </body>
